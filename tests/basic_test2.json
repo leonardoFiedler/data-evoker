@@ -1,0 +1,16 @@
+{
+    "description": "A representation of a person, company, organization, or place",
+    "type": "object",
+    "properties": {
+      "fruits": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "vegetables": {
+        "type": "array",
+        "items": { "type": "string" }
+      }
+    }
+}

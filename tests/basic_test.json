@@ -1,0 +1,17 @@
+{
+    "type": "object",
+    "properties": {
+        "first_name": { "type": "string" },
+        "last_name": { "type": "string" },
+        "age": { "type": "integer" },
+        "club": {
+            "type": "object",
+            "properties": {
+                "name": { "type": "string" },
+                "founded": { "type": "integer" }
+            },
+            "required": ["name"]
+        }
+    },
+    "required": ["first_name", "last_name", "age", "club"]
+}
