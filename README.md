@@ -14,27 +14,9 @@ Data Evoker receives a [JSON Schema](https://json-schema.org) like file and outp
 ## Installation process
 
 1. Clone repo inside your computer
-2. Create a virtual env inside project directory
-
-Linux/Mac OS
-```
-cd [project-diretory]
-python -m venv .venv
-source .venv/bin/activate
-```
-
-Windows
-```
-cd [project-diretory]
-python -m venv .venv
-source .venv/Scripts/activate
-```
-
-3. Install dependencies
-
-```
-pip install -r requirements.txt
-```
+2. Install [Poetry](https://python-poetry.org) if it's not already installed
+3. Use the command `poetry --version` to check if Poetry is already installed
+4. Install the dependencies using the command: `poetry install`
 
 ## Roadmap development
 

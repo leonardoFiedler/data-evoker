@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "data-evoker"
+version = "0.0.1"
+description = "Tiny library that generates fake data according to an existing JSON schema"
+authors = ["Leonardo Fiedler <leonardo.fiedler.96@gmail.com>"]
+license = "MIT License (MIT)"
+readme = "README.md"
+packages = [{include = "data_evoker"}]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+black = "23.1.0"
+
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.2.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
