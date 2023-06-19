@@ -63,22 +63,25 @@ def validate_object(data: dict, keys: list, data_type_properties: list):
                 raise JSONSchemaValidationError(
                     f"Required Key `{name}` not found for type `{type_exp}`."
                 )
-    
+
     # Validate children
-    if data['type'] == 'array' and (data['items'] == 'array' or data['items'] == 'object'):
+    if data["type"] == "array" and (
+        data["items"] == "array" or data["items"] == "object"
+    ):
         validate_children(data)
+
 
 # TODO: Continues here
 def validate_children(data: dict):
     has_child = True
 
     while has_child:
-        if data['items'] == 'array':
+        if data["items"] == "array":
             pass
-        elif data['items'] == 'object':
+        elif data["items"] == "object":
             pass
         else:
-
+            pass
 
 
 def validate_data_type_object(prop_name: str, keys: list, data_type_properties: list):
